@@ -197,4 +197,43 @@ h1{
     z-index: 1;
 }
 
+.buton{
+    display: flex;
+    justify-content: center;
+}
+
+.play-button {
+    width: 100px;
+    height: 40px;
+    background-color: #F5C518;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .play-button:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .play-button:hover:before {
+    opacity: 1;
+  }
+  
+  .play-button:active:before {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
 

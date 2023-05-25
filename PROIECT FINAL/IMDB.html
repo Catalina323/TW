@@ -9,16 +9,15 @@
     <script src="film_frumi.js"></script>
 </head>
 <body>
-<div class="fundal1">
+<div class="fundal1" id="fundal">
     <div class="bara">
         <a href="#Galerie"> Poze</a>
-        <a href="#Actori">Actori</a>
+        <a id="Actori">Actori</a>
         <div class="lista">
             <button class="buton">Lista</button>
             <div class="continut">
-                <a>Chestie1</a>
-                <a>Chestie2</a>
-                <a>Chestie3</a>
+                <a id="1">Sterge</a>
+                <a id="2">Adauga</a>
             </div>
         </div>
 
@@ -60,8 +59,28 @@
     <img class="poza" src="https://storage0.dms.mpinteractiv.ro/media/401/341/5531/18131746/1/c2.jpg">
 </div>
 
-<div class="buton">
-    <button class="play-button">Play</button>
-    <button class="stil">Apasa-ma!</button>
+<div class="butonJS">
+    <button class="play-button" >Play</button>
+    <button class="stil" id="culoare">Apasa-ma!</button>
 </div>
 
+<div class="form_titlu">Formular</div>
+
+<form class="container">
+    <label>First name: </label>
+    <input name="firstName" id="nume" required />
+    <br>
+    <label>Last name: </label>
+    <input name="lastName" id="prenume" required />
+    <br>
+    <label>Age: </label>
+    <input name="age" required />
+    <br>
+    <label>City: </label>
+    <input name="city" required />
+    <br>
+    
+    <input id="submit" type="submit" value="Add person">
+</form>
+
+</body>
